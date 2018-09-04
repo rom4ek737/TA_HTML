@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Register page</title>
+</head>
+<body>
+<h3>Registration data</h3>
+<form>
+    <fieldset>
+        <legend>User registration</legend>
+    <label for="textfield">Enter your name:</label>
+    <input type="text" id="textfield" value="" maxlength="25" required> 
+    <br>
+    <label for="phone_number">Enter your phone number:</label>
+    <input type="tel" id="phone_number" value="" required>
+    <br>
+    <label>Select variant:</label> 
+    <br>
+    <select>
+            <option value="personal">personal</option>
+            <option value="personal">business</option>
+    </select>
+    <br>
+    <input type="checkbox" id="Call_me_back" value="Call" checked> Call me back<br>
+    <label for="choise">Description:</label><br>
+    <textarea name="textarea" id="choise" cols="24" rows="2" required></textarea>
+</fieldset>
+    <br>
+    <input type="submit" formaction="success.html" value="Submit">
+</form>
+</body>
+</html>
