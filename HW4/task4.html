@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+  <script>
+    var finalNumbers = "";
+    var userString = "іва 24 уц ац34434ауку";
+ 
+      function findNumbers(str) {
+        finalNumbers = parseInt(str.replace(/\D+/g,""));
+        return finalNumbers;
+      }
+      
+      alert(findNumbers(userString));
+  </script>
+</body>
+</html>

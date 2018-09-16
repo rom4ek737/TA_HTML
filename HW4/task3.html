@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+  <script>
+    var userString = "dfgxxxxdkgfmgxxxxdfpolitykadfgxxxxdsdfpolitykafdffxxxxddxxxxdfgdf";
+  function filter(str) {
+      while (str.indexOf("xxxx") != -1) {
+          str = str.replace("xxxx", "");
+      }
+      while (str.indexOf("polityka") != -1) {
+          str = str.replace("polityka", "");
+      }
+      return str; 
+  }
+      alert(filter(userString));
+  </script>
+</body>
+</html>

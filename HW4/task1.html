@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+  <script>
+    var count;
+    var myStr = "";
+    var maxlength;
+	userString = prompt("Please, enter the string:");
+  function truncate(str, maxlength) {
+      for (count = 0; count < str.length; count ++) {
+          while(count < maxlength) {
+              myStr += str[count];
+              count ++;
+          }
+      }
+      myStr += "...";
+      return myStr;
+  }
+      alert(truncate(userString, 3));
+      
+  </script>
+</body>
+</html>

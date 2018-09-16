@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+  <script>
+    var count = 0;
+    var number = 0;
+    var position;
+	var userString = "Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького.";
+  function  calculateChar(str) {
+      position = str.indexOf("а");
+      while (position != -1) {
+          count ++;
+          position = str.indexOf("а", position + 1);
+      }
+      return count;  
+  }
+      alert(calculateChar(userString));
+  </script>
+</body>
+</html>

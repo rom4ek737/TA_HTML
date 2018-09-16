@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>found </title>
+</head>
+<body>
+  <h1 class="result">---</h1>
+  <script>
+    var i;
+    var j;
+    var k;
+  function remember(str) {
+      var result = [];
+      var arr = str.split("");
+      for (i = 1; i < arr.length; i ++) {
+        for (j = i - 1; j >= 0; j --) { 
+            if (arr[j] == arr[i]) { 
+                var isUnique = true; 
+                for (k = 0; k < result.length; k++) {
+                    if (result[k] == arr[i]) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique) {
+                    result.push(arr[i]); 
+                }
+                break;
+            } 
+        } 
+    } 
+    return result;
+}
+      alert(remember("sdfpPlpslplAPALe"));
+      document.write(remember("sdfpPlpslplAPALe"));
+  </script>
+</body>
+</html>
